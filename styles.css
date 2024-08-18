@@ -1,0 +1,111 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+.resize-image {
+    width: 300px;
+    height: 200px;
+  }
+  
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin: 1rem 0;
+}
+
+nav span {
+    display: inline-block;
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav span:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse; /* Places the about section on the right */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    gap: 2rem; /* Space between main content and the about section */
+}
+
+main {
+    flex: 2; /* Main content takes more space */
+}
+
+aside.about {
+    flex: 1; /* About section takes less space */
+    background-color: #ececec;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+aside.about h2 {
+    margin-bottom: 1rem;
+}
+
+.post {
+    background: hsl(0, 21%, 94%);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    gap: 1rem;
+}
+
+.post img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post .content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post h2 {
+    margin-bottom: 0.5rem;
+}
+
+.post p {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background: #3a3b3b;
+    color: #73e4f3;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
